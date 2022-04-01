@@ -1,0 +1,54 @@
+.communication {
+  background: url('../img/bg.jpg') center / cover no-repeat;
+  padding: 70px 0px;
+
+  // .communication__column
+
+  &__column {
+    width: prc(611, 1130);
+    background: #ffffff;
+    border-radius: 15px;
+    margin: 0px 0px 0px auto;
+  }
+
+  // .communication__body
+
+  &__body {
+    max-width: 500px;
+    margin: 0px auto;
+    padding: 40px 15px;
+  }
+
+  // .communication__title
+
+  &__title {
+    font-size: rem(56);
+    line-height: prc(68, 56);
+    margin: 0px 0px em(16, 56) 0px;
+  }
+
+  // .communication__text
+
+  &__text {
+    margin: 0px 0px em(35, 18) 0px;
+  }
+
+  // .communication__input
+
+  &__input {
+    padding: 20px 22px;
+    margin: 0px 0px em(23, 16) 0px;
+    &:nth-child(2) {
+      margin: 0px 0px em(37, 16) 0px;
+    }
+  }
+
+  // .communication__btn
+
+  &__btn {
+    font-size: rem(18);
+    line-height: prc(22, 18);
+    width: 100%;
+    padding: 22px 15px;
+  }
+}

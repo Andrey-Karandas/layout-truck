@@ -1,0 +1,78 @@
+// Import =============================================
+@import '_function.scss';
+
+.services {
+  padding: 29px 0px 26px 0px;
+  // .services__title
+
+  &__title {
+    font-size: rem(40);
+    line-height: prc(48, 40);
+    font-weight: 700;
+    margin: 0px 0px em(18, 40) 0px;
+    text-align: center;
+  }
+
+  // .services__text
+
+  &__text {
+    text-align: center;
+    margin: 0px 0px em(48, 18) 0px;
+  }
+
+  // .services__row
+
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0px -18px;
+  }
+
+  // .services__column
+
+  &__column {
+    flex: 1 1 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 18px;
+    margin: 0px 0px 32px 0px;
+  }
+
+  // .services__item
+
+  &__item {
+    flex: 1 1 auto;
+    padding: 10px 25px 27% 25px;
+    border-radius: 9px;
+    background: #f4f6fa;
+    position: relative;
+    img {
+      position: absolute;
+      bottom: 20px;
+      right: 0px;
+    }
+  }
+
+  // .services__body
+
+  &__body {
+    max-width: 328px;
+  }
+
+  // .services__body-title
+
+  &__body-title {
+    font-size: rem(24);
+    line-height: prc(29, 24);
+    font-weight: 700;
+    margin: 0px 0px em(15, 24) 0px;
+  }
+
+  // .services__body-text
+
+  &__body-text {
+    font-size: rem(16);
+    line-height: prc(19, 16);
+    color: rgba(51, 51, 51, 0.8);
+  }
+}

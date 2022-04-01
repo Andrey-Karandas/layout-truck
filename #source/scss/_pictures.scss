@@ -1,0 +1,37 @@
+.pictures {
+  padding: 56px 0px;
+  text-align: center;
+  img {
+    margin: 0px 0px 23px 0px;
+  }
+
+  // .pictures__title
+
+  &__title {
+    margin: 0px 0px em(39, 48) 0px;
+  }
+
+  // .pictures__slide
+
+  &__slide {
+    display: flex;
+    justify-content: center;
+    li {
+      width: 8px;
+      height: 8px;
+      border-radius: 10px;
+      background: rgba(71, 98, 255, 0.74);
+      margin: 0px 5px 0px 0px;
+      &:last-child {
+        margin: 0px 0px 0px 0px;
+      }
+    }
+  }
+
+  // .pictures__link
+
+  &__link {
+    display: inline-block;
+    padding: 8px;
+  }
+}
