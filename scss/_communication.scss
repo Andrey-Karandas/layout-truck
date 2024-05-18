@@ -1,0 +1,72 @@
+.communication {
+  background: url('../img/communication/1.jpg') center / cover no-repeat;
+
+  &__column {
+    max-width: 611px;
+    margin: 0px 0px 0px auto;
+    background: $primary-white;
+    border-radius: 15px;
+  }
+
+  &__body {
+    max-width: 500px;
+    margin: 0px auto;
+  }
+
+  &__title {
+    font-size: rem(56);
+    line-height: prc(68, 56);
+    font-weight: 700;
+    margin: 0px 0px em(16, 56) 0px;
+  }
+
+  &__text {
+    margin: 0px 0px em(35, 18) 0px;
+  }
+
+  &__input {
+    display: block;
+    font-size: rem(16);
+    line-height: prc(19, 16);
+    color: #979797;
+    background: rgba(71, 98, 255, 0.078);
+    border-radius: 8px;
+    width: 100%;
+    padding: 20px 22px;
+    margin: 0px 0px em(23, 16) 0px;
+    &:nth-child(2) {
+      margin: 0px 0px em(37, 16) 0px;
+    }
+  }
+
+  &__btn {
+    font-size: rem(18);
+    line-height: prc(22, 18);
+    width: 100%;
+    padding: 22px 15px;
+  }
+}
+
+@media (min-width: 768px) {
+  .communication {
+    padding: 70px 0px;
+
+    &__body {
+      padding: 40px 20px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .communication {
+    padding: 30px 0px;
+
+    &__body {
+      padding: 20px 20px;
+    }
+
+    &__title {
+      font-size: rem(32);
+    }
+  }
+}

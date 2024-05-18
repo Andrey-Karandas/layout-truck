@@ -1,0 +1,133 @@
+.footer {
+  background-color: #1a1a1a;
+
+  &__bottom {
+    font-size: rem(12);
+    line-height: prc(24, 12);
+    color: #d9dbe1;
+    border-top: 0.7px solid #474747;
+    padding: 18px 0px;
+  }
+}
+
+.column {
+  &__head {
+    font-size: rem(20);
+    line-height: prc(24, 20);
+    font-weight: 500;
+    color: $primary-white;
+  }
+
+  &__list {
+    &_2 {
+      li {
+        &:nth-child(4) {
+          margin: 0px 0px 19px 0px;
+        }
+        &:nth-child(5) {
+          margin: 0px 0px 15px 0px;
+        }
+      }
+    }
+
+    &_3 {
+      font-weight: 500;
+    }
+  }
+
+  &__item {
+    margin: 0px 0px 8px 0px;
+    &:first-child {
+      margin: 0px 0px em(15, 20) 0px;
+    }
+    &:last-child {
+      margin: 0px 0px 0px 0px;
+    }
+  }
+
+  &__link {
+    font-size: rem(16);
+    line-height: prc(19, 16);
+    color: $primary-white;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer {
+    &__top {
+      display: flex;
+      justify-content: space-between;
+      padding: 50px 0px 67px 0px;
+    }
+    &__arrow {
+      display: none;
+    }
+  }
+  .column {
+    &__list {
+      padding: 15px 0px 0px 0px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 30px 0px;
+    text-align: center;
+
+    &__top {
+      margin: 0px 0px 20px 0px;
+    }
+  }
+
+  .column__list.active {
+    padding: 10px 0px 0px 0px;
+    display: block;
+
+    .column__link {
+      animation: fade 1s ease-in-out 1 both;
+    }
+  }
+  .column__arrow.active {
+    transform: rotateZ(180deg);
+  }
+
+  .column {
+    margin: 0px 0px 15px 0px;
+    &:last-child {
+      margin: 0px 0px 0px 0px;
+    }
+    &__row {
+      display: flex;
+      justify-content: center;
+      column-gap: 10px;
+    }
+
+    &__list {
+      display: none;
+    }
+
+    &__arrow {
+      transition: all 0.3s linear;
+      display: block;
+      width: 25px;
+      height: 25px;
+      position: relative;
+      span {
+        position: absolute;
+        top: 50%;
+        width: 15px;
+        height: 2px;
+        background-color: $primary-white;
+        &:first-child {
+          left: 0;
+          transform: rotateZ(45deg);
+        }
+        &:last-child {
+          right: 0;
+          transform: rotateZ(-45deg);
+        }
+      }
+    }
+  }
+}

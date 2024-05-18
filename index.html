@@ -5,11 +5,12 @@
     <meta name="format-detection" content="telephone=no" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" block="IE=edge" />
-    <link rel="stylesheet" href="css/style.css" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <!-- Оболочка -->
@@ -17,140 +18,137 @@
       <!-- Шапка -->
       <header class="header">
         <div class="container">
-          <div class="header__top">
-            <div class="header__column header__column_1">
-              <a href="#" class="header__icon">
-                <img src="img/icons/1.svg" alt="" />
-              </a>
-              <div class="header__text">
-                <div class="header__item">Наш адрес:</div>
-                <a href="#" class="header__item item"
-                  >г. Бишкек, ул. Ляляля 69</a
-                >
-              </div>
+          <div class="header__body">
+            <div class="header__burger">
+              <span></span>
+              <span></span>
+              <span></span>
             </div>
-            <div class="header__column header__column_2">
-              <a href="#" class="header__icon">
-                <img src="img/icons/2.svg" alt="" />
-              </a>
-              <div class="header__text">
-                <div class="header__item">График работы:</div>
-                <div class="header__item item">
-                  С 8:00 до 22:00 без выходных
+            <nav class="header__menu menu">
+              <div class="menu__top top">
+                <div class="top__column">
+                  <a href="#" class="top__icon">
+                    <img src="img/icons/1.svg" alt="" />
+                  </a>
+                  <div class="top__text">
+                    <div class="top__item">Наш адрес:</div>
+                    <a href="#" class="top__item item"
+                      >г. Бишкек, ул. Ляляля 69</a
+                    >
+                  </div>
+                </div>
+                <div class="top__column top__column_big">
+                  <a href="#" class="top__icon">
+                    <img src="img/icons/2.svg" alt="" />
+                  </a>
+                  <div class="top__text">
+                    <div class="top__item">График работы:</div>
+                    <div class="top__item item">
+                      С 8:00 до 22:00 без выходных
+                    </div>
+                  </div>
+                </div>
+                <div class="top__column">
+                  <a href="#" class="top__icon">
+                    <img src="img/icons/3.svg" alt="" />
+                  </a>
+                  <div class="top__text">
+                    <div class="top__item">
+                      <a class="item" href="tel:+77005151518"
+                        >+7 (700) 51 51 518</a
+                      >
+                    </div>
+                    <div class="top__item">
+                      <a class="item" href="tel:+77085151518"
+                        >+7 (708) 51 51 518</a
+                      >
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="header__column">
-              <a href="#" class="header__icon">
-                <img src="img/icons/3.svg" alt="" />
-              </a>
-              <div class="header__text">
-                <a class="header__item item" href="tel:+77085151518"
-                  >+7 (708) 51 51 518</a
-                >
-                <a class="header__item item" href="tel:+77005151518"
-                  >+7 (700) 51 51 518</a
-                >
+              <div class="menu__bottom bottom">
+                <a href="#" class="bottom__logo">
+                  <img src="img/header/logo.png" alt="logo" />
+                </a>
+                <ul class="bottom__list">
+                  <li>
+                    <a href="#" class="bottom__link">Это мы</a>
+                  </li>
+                  <li>
+                    <a href="#" class="bottom__link">Почему мы?</a>
+                  </li>
+                  <li>
+                    <a href="#" class="bottom__link">А вот поэтому</a>
+                  </li>
+                  <li>
+                    <a href="#" class="bottom__link">Контакты</a>
+                  </li>
+                </ul>
+                <a href="#" class="bottom__btn btn">Заказать звонок</a>
               </div>
-            </div>
-          </div>
-          <div class="header__bottom">
-            <a href="#" class="header__logo">
-              <img src="img/logo.png" alt="" />
-            </a>
-            <nav class="header__menu">
-              <ul class="header__list">
-                <li>
-                  <a href="#" class="header__link">Это мы</a>
-                </li>
-                <li>
-                  <a href="#" class="header__link">Почему мы?</a>
-                </li>
-                <li>
-                  <a href="#" class="header__link">А вот поэтому</a>
-                </li>
-                <li>
-                  <a href="#" class="header__link">Контакты</a>
-                </li>
-              </ul>
             </nav>
-            <a href="#" class="header__btn btn">Заказать звонок</a>
           </div>
         </div>
       </header>
       <!-- Контент -->
       <main class="main">
         <section class="truck">
-          <div class="container">
-            <div class="truck__body">
-              <h1 class="truck__title title">Affordable truck service</h1>
-              <div class="truck__text text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-                odio in et, lectus sit lorem id integer.
-              </div>
-              <a href="#" class="truck__btn btn">Чета сделать</a>
+          <div class="truck__body">
+            <h1 class="truck__title">Affordable truck service</h1>
+            <div class="truck__text text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio
+              in et, lectus sit lorem id integer.
             </div>
+            <a href="#" class="truck__btn btn">Чета сделать</a>
           </div>
         </section>
         <section class="services">
           <div class="container">
-            <h2 class="services__title">Любые услуги за ваши денишки</h2>
+            <h2 class="services__title title">Любые услуги за ваши денишки</h2>
             <div class="services__text text">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc odio
               in et, lectus sit lorem id integer.
             </div>
             <div class="services__row">
-              <article class="services__column">
-                <div class="services__item">
-                  <div class="services__body">
-                    <div class="services__body-title">
-                      Б/у запчасти для грузовых авто из Европы
-                    </div>
-                    <div class="services__body-text">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Nunc odio in et, lectus sit lorem id integer.
-                    </div>
-                    <img src="img/services/1.png" alt="" />
+              <article class="services__column column">
+                <div class="column__body column__body_1">
+                  <div class="column__title">
+                    Б/у запчасти для грузовых авто из Европы
+                  </div>
+                  <div class="column__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Nunc odio in et, lectus sit lorem id integer.
                   </div>
                 </div>
               </article>
-              <article class="services__column">
-                <div class="services__item">
-                  <div class="services__body">
-                    <div class="services__body-title">
-                      Автомойка грузовых и легковых авто
-                    </div>
-                    <div class="services__body-text">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Nunc odio in et, lectus sit lorem id integer.
-                    </div>
-                    <img src="img/services/2.png" alt="" />
+              <article class="services__column column">
+                <div class="column__body column__body_2">
+                  <div class="column__title">
+                    Автомойка грузовых и легковых авто
+                  </div>
+                  <div class="column__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Nunc odio in et, lectus sit lorem id integer.
                   </div>
                 </div>
               </article>
-              <article class="services__column">
-                <div class="services__item">
-                  <div class="services__body">
-                    <div class="services__body-title">Магазин аксессуаров</div>
-                    <div class="services__body-text">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Nunc odio in et, lectus sit lorem id integer.
-                    </div>
-                    <img src="img/services/3.png" alt="" />
+              <article class="services__column column">
+                <div class="column__body column__body_3">
+                  <div class="column__title">Магазин аксессуаров</div>
+                  <div class="column__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Nunc odio in et, lectus sit lorem id integer.
                   </div>
                 </div>
               </article>
-              <article class="services__column">
-                <div class="services__item">
-                  <div class="services__body">
-                    <div class="services__body-title">
-                      Пункт замены масла легковых авто
-                    </div>
-                    <div class="services__body-text">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Nunc odio in et, lectus sit lorem id integer.
-                    </div>
-                    <img src="img/services/4.png" alt="" />
+              <article class="services__column column">
+                <div class="column__body column__body_4">
+                  <div class="column__title">
+                    Пункт замены масла легковых авто
+                  </div>
+                  <div class="column__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Nunc odio in et, lectus sit lorem id integer.
                   </div>
                 </div>
               </article>
@@ -180,11 +178,11 @@
                 </div>
               </div>
               <div class="brand__column">
-                <img class="brand__scania" src="img/brand/1.svg" alt="" />
-                <img class="brand__volvo" src="img/brand/2.svg" />
-                <img class="brand__man" src="img/brand/3.svg" />
-                <img class="brand__daf" src="img/brand/4.svg" />
-                <img class="brand__renault" src="img/brand/5.svg" />
+                <img class="brand__scania" src="img/brand/1.svg" alt="car" />
+                <img class="brand__volvo" src="img/brand/2.svg" alt="car" />
+                <img class="brand__man" src="img/brand/3.svg" alt="car" />
+                <img class="brand__daf" src="img/brand/4.svg" alt="car" />
+                <img class="brand__renault" src="img/brand/5.svg" alt="car" />
               </div>
             </div>
           </div>
@@ -211,28 +209,30 @@
               </div>
             </div>
             <div class="country__column">
-              <img src="img/country/map.png" alt="" />
+              <img src="img/country/map.png" alt="map" />
             </div>
           </div>
         </section>
-        <section class="pictures">
+        <section class="slider">
           <div class="container">
-            <h2 class="pictures__title title">Фоточки</h2>
-            <img src="img/slide.jpg" alt="" />
-            <ul class="pictures__slide">
-              <li>
-                <a href="#" class="pictures__link"></a>
-              </li>
-              <li>
-                <a href="#" class="pictures__link"></a>
-              </li>
-              <li>
-                <a href="#" class="pictures__link"></a>
-              </li>
-              <li>
-                <a href="#" class="pictures__link"></a>
-              </li>
-            </ul>
+            <h2 class="slider__title title">Фоточки</h2>
+            <div class="slider__wrapper">
+              <div class="slider__row">
+                <div class="slider__column">
+                  <img src="img/slider/1.jpg" alt="slide" />
+                </div>
+                <div class="slider__column">
+                  <img src="img/slider/1.jpg" alt="slide" />
+                </div>
+                <div class="slider__column">
+                  <img src="img/slider/1.jpg" alt="slide" />
+                </div>
+                <div class="slider__column">
+                  <img src="img/slider/1.jpg" alt="slide" />
+                </div>
+              </div>
+            </div>
+            <div class="slider__pagination"></div>
           </div>
         </section>
         <section class="communication">
@@ -244,14 +244,16 @@
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
                   odio in et, lectus sit lorem id integer.
                 </div>
-                <form action="#">
+                <form name="main" class="communication__form" action="#">
                   <input
-                    class="communication__input input"
+                    name="inputName"
+                    class="communication__input"
                     type="text"
                     placeholder="Имя"
                   />
                   <input
-                    class="communication__input input"
+                    name="inputContact"
+                    class="communication__input"
                     type="text"
                     placeholder="Номер телефона"
                   />
@@ -269,73 +271,97 @@
         <div class="container">
           <div class="footer__top">
             <a href="#" class="footer__logo">
-              <img src="img/footer__logo.png" alt="" />
+              <img src="img/footer/logo.png" alt="logo" />
             </a>
-            <ul class="footer__list">
-              <li class="footer__list-title">Главная</li>
-              <li>
-                <a href="#" class="footer__link">Это мы</a>
-              </li>
-              <li>
-                <a href="#" class="footer__link">Кто мы</a>
-              </li>
-              <li>
-                <a href="#" class="footer__link">Почему мы?</a>
-              </li>
-              <li>
-                <a href="#" class="footer__link">Остались вопросы</a>
-              </li>
-              <li>
-                <a href="#" class="footer__link">Контакты</a>
-              </li>
-            </ul>
-            <ul class="footer__list footer__list_2">
-              <li class="footer__list-title">Контакты</li>
-              <li>
-                <a href="tel:77088028888" class="footer__link"
-                  >+7 (708) 802 88 88</a
-                >
-              </li>
-              <li>
-                <a href="tel:77088038888" class="footer__link"
-                  >+7 (708) 803 88 88</a
-                >
-              </li>
-              <li>
-                <a href="tel:77085151518" class="footer__link"
-                  >+7 (708) 51 51 518</a
-                >
-              </li>
-              <li>
-                <a href="tel:77005151518" class="footer__link"
-                  >+7 (700) 51 51 518</a
-                >
-              </li>
-              <li>
-                <a href="tel:+77088028888" class="footer__link">
-                  <img src="img/icons/v.svg" alt="" /> +7 (708) 802 88 88
-                </a>
-              </li>
-              <li>
-                <a href="#" class="footer__link">
-                  <img src="img/icons/vector.svg" alt="" /> г. Бишкек, ул.
-                  Ляляля 69
-                </a>
-              </li>
-            </ul>
-            <ul class="footer__list footer__list_3">
-              <li class="footer__list-title">Следите за нами</li>
-              <li>
-                <a href="truck_service_ofFicIaL" class="footer__link">
-                  <img src="img/icons/f.svg" alt="" /> truck_service_ofFicIaL
-                </a>
-              </li>
-              <li>
-                <a href="truck_service_ofFicIaL" class="footer__link">
-                  <img src="img/icons/Inst.svg" alt="" /> truck_service_ofFicIaL
-                </a>
-              </li>
-            </ul>
+            <div class="footer__column column">
+              <div class="column__row">
+                <div class="column__head">Главная</div>
+                <div class="column__arrow column__arrow_1">
+                  <span></span><span></span>
+                </div>
+              </div>
+              <ul class="column__list column__list_1">
+                <li class="column__item">
+                  <a href="#" class="column__link">Это мы</a>
+                </li>
+                <li class="column__item">
+                  <a href="#" class="column__link">Кто мы</a>
+                </li>
+                <li class="column__item">
+                  <a href="#" class="column__link">Почему мы?</a>
+                </li>
+                <li class="column__item">
+                  <a href="#" class="column__link">Остались вопросы</a>
+                </li>
+                <li class="column__item">
+                  <a href="#" class="column__link">Контакты</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__column column">
+              <div class="column__row">
+                <div class="column__head">Контакты</div>
+                <div class="column__arrow column__arrow_2">
+                  <span></span><span></span>
+                </div>
+              </div>
+              <ul class="column__list column__list_2">
+                <li class="column__item">
+                  <a href="tel:77088028888" class="column__link"
+                    >+7 (708) 802 88 88</a
+                  >
+                </li>
+                <li class="column__item">
+                  <a href="tel:77088038888" class="column__link"
+                    >+7 (708) 803 88 88</a
+                  >
+                </li>
+                <li class="column__item">
+                  <a href="tel:77085151518" class="column__link"
+                    >+7 (708) 51 51 518</a
+                  >
+                </li>
+                <li class="column__item">
+                  <a href="tel:77005151518" class="column__link"
+                    >+7 (700) 51 51 518</a
+                  >
+                </li>
+                <li class="column__item">
+                  <a href="tel:+77088028888" class="column__link"
+                    ><img src="img/icons/v.svg" alt="whatsap" />+7 (708) 802 88
+                    88</a
+                  >
+                </li>
+                <li class="column__item">
+                  <a href="#" class="column__link">
+                    <img src="img/icons/vector.svg" alt="vector" /> г. Бишкек,
+                    ул. Ляляля 69</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="footer__column column">
+              <div class="column__row">
+                <div class="column__head">Следите за нами</div>
+                <div class="column__arrow column__arrow_3">
+                  <span></span><span></span>
+                </div>
+              </div>
+              <ul class="column__list column__list_3">
+                <li class="column__item">
+                  <a href="#" class="column__link"
+                    ><img src="img/icons/f.svg" alt="" />
+                    truck_service_ofFicIaL</a
+                  >
+                </li>
+                <li class="column__item">
+                  <a href="#" class="column__link">
+                    <img src="img/icons/Inst.svg" alt="" />
+                    truck_service_ofFicIaL
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
           <div class="footer__bottom">
             Copyright © Truck Services 2022. All rights reserved.
@@ -343,5 +369,10 @@
         </div>
       </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="js/burger.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/acord.js"></script>
+    <script src="js/form.js"></script>
   </body>
 </html>

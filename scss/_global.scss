@@ -1,0 +1,77 @@
+@import url(https://fonts.googleapis.com/css?family=Inter:,500,600,700);
+
+body {
+  font-family: 'Inter';
+  color: $primary-basic;
+  background-color: #fdfdfd;
+}
+
+.wrapper {
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0px auto;
+  padding: 0px 15px;
+}
+
+.main {
+  flex: 1 1 auto;
+}
+
+.lock {
+  overflow: hidden;
+}
+
+.item {
+  font-size: rem(14);
+  line-height: prc(17, 14);
+  font-weight: 500;
+  color: inherit;
+}
+
+.title {
+  font-size: rem(48);
+  line-height: prc(58, 48);
+  font-weight: 700;
+}
+
+.text {
+  font-size: rem(18);
+  line-height: prc(22, 18);
+  opacity: 0.8;
+}
+
+.btn {
+  display: block;
+  font-size: rem(16);
+  line-height: prc(38, 16);
+  font-weight: 600;
+  color: $primary-white;
+  background: $primary-blue;
+  border: 2px solid $primary-blue;
+  border-radius: 8px;
+  text-align: center;
+  transition: background-color 0.3s linear, color 0.3s linear;
+  &:hover {
+    background: $primary-white;
+    color: $primary-blue;
+  }
+  &:active {
+    color: $primary-white;
+    background: $primary-blue;
+  }
+}
+
+@media (max-width: 767px) {
+  .title {
+    font-size: rem(32);
+  }
+  .text {
+    font-size: rem(16);
+  }
+}

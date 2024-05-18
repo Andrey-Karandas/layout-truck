@@ -1,0 +1,87 @@
+.brand {
+  &__column {
+    &:last-child {
+      position: relative;
+    }
+  }
+
+  &__title {
+    margin: 0px 0px em(16, 48) 0px;
+  }
+
+  &__text {
+    p {
+      margin: 0px 0px em(16, 18) 0px;
+      &:last-child {
+        margin: 0px 0px 0px 0px;
+      }
+    }
+  }
+
+  &__scania,
+  &__volvo,
+  &__man,
+  &__daf,
+  &__renault {
+    position: absolute;
+  }
+
+  &__scania {
+    top: 0px;
+    left: 0px;
+    width: prc(175, 520);
+  }
+
+  &__volvo {
+    top: 0px;
+    right: 0px;
+    width: prc(129, 520);
+  }
+  &__man {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: prc(131, 520);
+  }
+
+  &__daf {
+    bottom: 56px;
+    left: 0px;
+    width: prc(176, 520);
+  }
+  &__renault {
+    bottom: 0px;
+    right: 0px;
+    width: prc(141, 520);
+  }
+}
+
+@media (min-width: 768px) {
+  .brand {
+    padding: 60px 0px;
+
+    &__row {
+      display: flex;
+      column-gap: 70px;
+    }
+    &__column {
+      flex: 0 1 50%;
+      padding: 0px 0px 11.2% 0px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .brand {
+    padding: 30px 0px;
+
+    &__column {
+      &:first-child {
+        margin: 0px 0px 30px 0px;
+      }
+      &:last-child {
+        padding: 0px 0px 70% 0px;
+      }
+    }
+  }
+}

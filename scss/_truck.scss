@@ -1,0 +1,58 @@
+.truck {
+  background: url('../img/truck/1.jpg') bottom right no-repeat;
+  min-height: 712px;
+
+  &__body {
+    max-width: 1140px;
+    padding: 0px 15px;
+    margin: 0px auto;
+  }
+
+  &__title {
+    font-size: rem(60);
+    line-height: prc(76, 60);
+    font-weight: 700;
+    margin: 0px 0px em(16, 60) 0px;
+  }
+
+  &__text {
+    margin: 0px 0px em(32, 18) 0px;
+  }
+
+  &__btn {
+    width: 196px;
+    height: 52px;
+    line-height: 45px;
+  }
+}
+
+@media (min-width: 768px) {
+  .truck {
+    padding: 250px 0px 0px 0px;
+    &__title {
+      width: 50%;
+    }
+
+    &__text {
+      width: 45%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .truck {
+    padding: 100px 0px 0px 0px;
+
+    &__body {
+      text-align: center;
+    }
+
+    &__title {
+      font-size: rem(40);
+    }
+
+    &__btn {
+      margin: 0px auto;
+    }
+  }
+}
