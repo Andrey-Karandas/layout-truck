@@ -88,8 +88,18 @@
       animation: fade 1s ease-in-out 1 both;
     }
   }
-  .column__arrow.active {
+
+  .column.active .column__arrow {
     transform: rotateZ(180deg);
+  }
+
+  .column.active .column__list {
+    padding: 10px 0px 0px 0px;
+    display: block;
+
+    .column__link {
+      animation: fade 1s ease-in-out 1 both;
+    }
   }
 
   .column {

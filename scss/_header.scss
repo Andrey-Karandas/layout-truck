@@ -165,7 +165,7 @@
     }
   }
 
-  .header__menu.menu.active {
+  .header__body.active .header__menu {
     overflow: auto;
     position: fixed;
     z-index: 15;
@@ -201,7 +201,7 @@
     }
   }
 
-  .header__burger.active {
+  .header__body.active .header__burger {
     span {
       &:first-child {
         transform: translate(0px, 10px) rotateZ(40deg);
@@ -213,7 +213,21 @@
         opacity: 0;
       }
     }
+
   }
+  // .header__burger.active {
+  //   span {
+  //     &:first-child {
+  //       transform: translate(0px, 10px) rotateZ(40deg);
+  //     }
+  //     &:nth-child(2) {
+  //       transform: rotateZ(-40deg);
+  //     }
+  //     &:last-child {
+  //       opacity: 0;
+  //     }
+  //   }
+  // }
 
   .top,
   .bottom {

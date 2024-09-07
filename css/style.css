@@ -345,7 +345,7 @@ body {
   .header__burger span:last-child {
     margin: 0px 0px 0px 0px;
   }
-  .header__menu.menu.active {
+  .header__body.active .header__menu {
     overflow: auto;
     position: fixed;
     z-index: 15;
@@ -367,7 +367,7 @@ body {
             align-items: center;
     row-gap: 15px;
   }
-  .header__menu.menu.active .top {
+  .header__body.active .header__menu .top {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
@@ -381,7 +381,7 @@ body {
     row-gap: 15px;
     max-width: 200px;
   }
-  .header__menu.menu.active .bottom {
+  .header__body.active .header__menu .bottom {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
@@ -389,25 +389,25 @@ body {
     display: -ms-flexbox;
     display: flex;
   }
-  .header__menu.menu.active .bottom__list li {
+  .header__body.active .header__menu .bottom__list li {
     margin: 0px 0px 15px 0px;
   }
-  .header__menu.menu.active .bottom__list li:last-child {
+  .header__body.active .header__menu .bottom__list li:last-child {
     margin: 0px 0px 0px 0px;
   }
-  .header__burger.active span:first-child {
+  .header__body.active .header__burger span:first-child {
     -webkit-transform: translate(0px, 10px) rotateZ(40deg);
             transform: translate(0px, 10px) rotateZ(40deg);
   }
-  .header__burger.active span:nth-child(2) {
+  .header__body.active .header__burger span:nth-child(2) {
     -webkit-transform: rotateZ(-40deg);
             transform: rotateZ(-40deg);
   }
-  .header__burger.active span:last-child {
+  .header__body.active .header__burger span:last-child {
     opacity: 0;
   }
   .top,
-.bottom {
+  .bottom {
     display: none;
   }
 }
@@ -840,9 +840,17 @@ body {
     -webkit-animation: fade 1s ease-in-out 1 both;
             animation: fade 1s ease-in-out 1 both;
   }
-  .column__arrow.active {
+  .column.active .column__arrow {
     -webkit-transform: rotateZ(180deg);
             transform: rotateZ(180deg);
+  }
+  .column.active .column__list {
+    padding: 10px 0px 0px 0px;
+    display: block;
+  }
+  .column.active .column__list .column__link {
+    -webkit-animation: fade 1s ease-in-out 1 both;
+            animation: fade 1s ease-in-out 1 both;
   }
   .column {
     margin: 0px 0px 15px 0px;
